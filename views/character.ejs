@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Express App</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="container">
+    <div class="character">
+        <% if (message) { %>
+        <h1 class="warning"><%= message %></h1>
+        <% } else { %>
+        <h1><%= character.name %></h1>
+        <ul>
+            <li>Name - <%= character.name %></li>
+            <li>Eye color - <%= character.eye_color %></li>
+            <li>Birth year - <%= character.birth_year %></li>
+            <li>Gender - <%= character.gender %></li>
+            <li>Hair color - <%= character.hair_color %></li>
+            <li>Height - <%= character.height %></li>
+            <li>Mass - <%= character.mass %></li>
+            <li>Skin color - <%= character.skin_color %></li>
+        </ul>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>
